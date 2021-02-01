@@ -9,10 +9,11 @@ public class seven {
         System.out.print(s);
 
     }
-    static boolean valid(String str){
+
+    static boolean valid(String str) {
         Stack<Character> stack = new Stack<Character>();
-        for(char c:str.toCharArray())
-            if (c == "(" || c == "{" || c == "[") {
+        /*for (char c : str.toCharArray()){
+          if (c == "(" || c == "{" || c == "[") {
                 stack.push(c);
             }else if(c == ")" && !stack.isEmpty()&& stack.peek()=="("){
                 stack.pop();
@@ -23,7 +24,9 @@ public class seven {
             }else{
                 return false;
             }
-        return stack.isEmpty();
+            return stack.isEmpty();
 
+    }*/
+        return false;
     }
 }
